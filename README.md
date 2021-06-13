@@ -21,6 +21,9 @@ Task:
 ## IDE Used
 Visual Studio Code
 
+## ERD Diagram
+![ERD](Images/erd.png)
+
 ## Demonstration
 0. Navigation
    ![Group Script](Images/Navigation.gif)
