@@ -22,6 +22,8 @@ Task:
 Visual Studio Code
 
 ## Demonstration
+0. Navigation
+   ![Group Script](Images/Navigation.gif)
 1. Get the Total Expenses by Each Department - Sum Function of Staff in Department
    ``` sql
    col "List of Doctors" format a80 
@@ -51,6 +53,7 @@ Visual Studio Code
    WHERE
     tmp.department_id = department.department_id;
    ```
+   ![Query](Images/1.png)
 2. Update Department Salary (Stored Procedure)
    ``` sql
    CREATE OR REPLACE PROCEDURE GIVE_BONUS_DEPARTMENT(
@@ -68,6 +71,10 @@ Visual Studio Code
    ) loop GIVE_BONUS_STAFF(staff_ptr.staff_id, bonus_salary);END loop;
    END;
    ```
+   #### Before ####
+   ![Before Procedure](Images/before_2.png)
+   #### After ####
+   ![After Procedure](Images/after_2.png)
 3. Determine If Staff is Junior Employee or Senior Employee (Function)
     ``` sql
     CREATE OR replace FUNCTION Determine_staff_experience(current_stf_id IN VARCHAR2)
@@ -89,3 +96,4 @@ Visual Studio Code
     RETURN staff_experience_txt;
     END;  
     ```
+    ![Function](Images/3.png)
